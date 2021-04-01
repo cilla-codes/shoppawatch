@@ -18,6 +18,10 @@
   @include respond(phone) {
     width: 100%;
   }
+
+  @include respond(max-279px) {
+    width: auto;
+  }
 }
 .watch-block {
   display: flex;

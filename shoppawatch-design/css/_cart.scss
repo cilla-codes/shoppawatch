@@ -19,6 +19,10 @@
     width: 100%;
   }
 
+  @include respond(max-279px) {
+    width: auto;
+  }
+
   .watch-block__cart {
     display: flex;
     justify-content: space-around;
@@ -289,5 +293,9 @@
   @include respond(phone) {
     width: 100%;
     padding: 0 1.1rem;
+  }
+
+  @include respond(max-279px) {
+    width: auto;
   }
 }

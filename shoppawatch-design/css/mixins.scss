@@ -20,6 +20,13 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
+  // max-280px
+  @if $breakpoint == max-279px {
+    @media (max-width: 17.44rem) {
+      @content;
+    }
+  }
+
   // min-280px - max-320px
   @if $breakpoint == mini-phone {
     @media (min-width: 17.5em) and (max-width: 20em) {

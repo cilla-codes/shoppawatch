@@ -74,6 +74,10 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  @include respond(max-279px) {
+    min-width: 1000px;
+    width: auto !important;
+  }
 }
 
 .main-wrapper {
